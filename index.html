@@ -8,6 +8,7 @@
 		temp.value="mohite.ruturaj15@gmail.com";
 		temp.select();
 		document.execCommand("copy");
+		temp.parentNode.removeChild(temp);
 		alert("Email copied to clipboard");
 	}
 </script>	
@@ -27,7 +28,7 @@
 					<p><b class="type" height="100px"></b></p>
 					<script type="text/javascript" src="assets/js/typed.js/lib/typed.js" ></script>
 				
-					<script type="text/javascript">
+					<script type="text/javascript" id="typedspec">
 
 						var typed= new Typed(".type",{
 							strings:["I make software","Check out my GitHub"],
@@ -75,9 +76,12 @@
 										<h2>About Me</h2>
 										<p>Hi I'm Ruturaj,</p>
 									</header>
-									<p>I am an undergraduate studying Electronics and Communication Engineering at IIIT Bangalore.<br>
+									<p class="info">I am an undergraduate studying Electronics and Communication Engineering at IIIT Bangalore.<br>
 										I am a software development enthusiast and love open-source. My fascination towards development has led me to learn a few technologies and make a few projects myself- about which, you can read below. 
 									</p>
+									<script>
+
+									</script>
 								</div>
 							</section>
 
