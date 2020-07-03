@@ -23,7 +23,7 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
 
-.avatar,.icons {
+.icons {
 	animation-name: floating;
 	animation-duration: 3s;
 	animation-iteration-count: infinite;
