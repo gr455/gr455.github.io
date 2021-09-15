@@ -1,17 +1,6 @@
 <!DOCTYPE HTML>
 <html>
-<!-- For copying email -->
-<script>
-	function cpyValue(){
-		var temp= document.createElement("textarea");
-		document.body.appendChild(temp);
-		temp.value="mohite.ruturaj15@gmail.com";
-		temp.select();
-		document.execCommand("copy");
-		temp.parentNode.removeChild(temp);
-		alert("Email copied to clipboard");
-	}
-</script>	
+<!-- For copying email -->	
 	<head>
 		<title>Ruturaj Mohite</title>
 		<meta charset="utf-8" />
@@ -55,16 +44,6 @@
 
 					</ul>
 				</nav>
-
-				<footer>
-					<ul class="icons">
-						<li><a href="https://www.github.com/gr455" class="icon brands fa-github"><span class="label">Github</span></a></li>						
-						<li><a href="https://www.instagram.com/___ruturaj___/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-						<li id="email"><a href="mailto:mohite.ruturaj15@gmail.com" class="icon solid fa-envelope"><span class="label" ><h1>mohite.ruturaj15@gmail.com</h1></span></a></li>
-						<li><a href="https://www.linkedin.com/in/ruturaj-mohite-bba864190/" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
-
-					</ul>
-				</footer>
 			</section>
 
 		<!-- Wrapper -->
@@ -82,9 +61,18 @@
 									<header class="major">
 										<h2>About Me</h2>
 										<p>Hi I'm Ruturaj,</p>
+										<ul class="icons">
+						<li><a href="https://www.github.com/gr455" class="icon brands fa-github"><span class="label">Github</span></a></li>						
+						<li id="email"><a href="mailto:mohite.ruturaj15@gmail.com" class="icon solid fa-envelope"><span class="label" ><h1>mohite.ruturaj15@gmail.com</h1></span></a></li>
+						<li><a href="https://www.linkedin.com/in/ruturaj-mohite/" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
+
+					</ul>
+
 									</header>
-									<p class="info">I am an undergraduate student studying Computer Science at IIIT Bangalore.<br>
-										I am a software development enthusiast and love open-source. My fascination towards development has led me to learn a few technologies and make a few projects myself- about which, you can read below. 
+									<p class="info">
+										I am an undergraduate student studying Computer Science at IIIT Bangalore.<br>
+										I am a software developer and avid open source contributer.<br>
+										My interests lie in Scalable Systems, Operating Systems and Web Security.
 									</p>
 									
 								</div>
@@ -133,9 +121,9 @@
 							</section>
 							<section id="five">
 								<div class="container">
-									<h3>Experience</h3>									
+									<h3>Experience</h3>	
+									<p><a href="https://github.com/CircuitVerse/CircuitVerse"><b>Google Summer of Code 2021 @ CircuitVerse</b></a>- Designed testbench to automatically run tests against a circuit. New Testbench greatly improves testing speed and gives user greater control over tests.</p>								
 									<p><a href="https://github.com/publiclab/spectral-workbench"><b>publiclab/spectral-workbench</b></a>- Contributed to Rails based open source project by fixing bugs, writing tests and improving DevOps workflow.</p>
-									<p><a href="https://github.com/CircuitVerse/CircuitVerse"><b>Google Summer of Code 2021 @ CircuitVerse</b></a>- Designed testbench to automatically run tests against a circuit. New Testbench greatly improves testing speed and gives user greater control over tests.</p>
 								</div>
 							</section>
 							<!-- Six -->
@@ -154,8 +142,21 @@
 									<p>These are a few projects that I have made so far</p>
 									<div class="features">
 										<article>
-											<a href="https://github.com/gr455/gesture-mouse" class="image"><img src="images/pic01.jpg" alt="" /></a>
-											<div class="inner">
+											<div class="">
+												<h4><a href="https://github.com/gr455/vSOS">vSOS</a></h4>
+
+												<p>A simple as possible bootloader and 32 bit kernel for x86 systems</p>
+												<p>vSOS contains:</p>
+												<ul>
+													<li>Keyboard driver</li>
+													<li>VGA driver</li>
+													<li>Interactive shell</li>
+													<li>Custom standard library (C)</li>
+												</ul>
+											</div>
+										</article>
+										<article>
+											<div class="">
 												<h4><a href="https://github.com/gr455/gesture-mouse">Gesture Mouse</a></h4>
 
 												<p>This python project uses OpenCV and pynput to move the mouse cursor(and click) on the screen completely gesture controlled. The mouse can be moved by moving the fist clenched. Opening the fist will result in a left click.<br>
@@ -163,26 +164,15 @@
 											</div>
 										</article>
 										<article>
-											<a href="https://github.com/zense/sac_elections_2020" class="image"><img src="images/pic08.png" alt="" /></a>
-											<div class="inner">
+											<div class="">
 												<h4><a href="https://github.com/zense/sac_elections_2020">Secure Elections</a></h4>
 												<p>This project is a website to host elections. It maintains the anonimity of the voter from all the other voters and candidates. The data integrity is preserved through a cryptographic hash check which prevents the votes in the database from being altered while preserving anonimity of the vote.</p>
 											</div>
 										</article>
 										<article>
-											<a href="https://github.com/gr455/notesite" class="image"><img src="images/pic05.png" alt="" /></a>
-											<div class="inner">
+											<div class="">
 												<h4><a href="https://github.com/gr455/notesite">Notesite</a></h4>
 												<p>This is a full stack django powered web application to share notes</p>
-												<p>Deployed at: <a href="https://gr455.pythonanywhere.com">gr455.pythonanywhere.com</a></p>
-											</div>
-										</article>
-										<article>
-											<a href="https://github.com/gr455/zensectf" class="image"><img src="images/pic07.png" alt="" /></a>
-											<div class="inner">
-												<h4><a href="https://github.com/gr455/zensectf">Zense CTF</a></h4>
-												<p>A capture the flag contest organized by the Information Security club of IIITB.</p>
-												<p>I designed the web exploitation challenges for the contest which range from simple directory traversal to apache log poisoning. I also helped with the infrastructure for the CTF.</p>
 											</div>
 										</article>
 										
@@ -196,7 +186,7 @@
 							<section id="four">
 								<div class="container">
 									<h3>Contact Me</h3>
-									<p id="tocpy">Feel free to mail me at <b><a href="mailto:mohite.ruturaj15@gmail.com">mohite.ruturaj15@gmail.com</a></b></p>
+									<p id="tocpy">Mail me at <b><a href="mailto:mohite.ruturaj15@gmail.com">mohite.ruturaj15@gmail.com</a></b></p>
 								</div>
 							</section>
 

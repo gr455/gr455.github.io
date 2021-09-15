@@ -24,10 +24,7 @@ footer, header, hgroup, menu, nav, section {
 	display: block;}
 
 .icons {
-	animation-name: floating;
-	animation-duration: 3s;
-	animation-iteration-count: infinite;
-	animation-timing-function: ease-in-out;
+
 }
 
 @keyframes floating {
