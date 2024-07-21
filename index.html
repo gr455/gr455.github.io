@@ -5,121 +5,98 @@
 		<title>Ruturaj Mohite</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"/>
-		<link rel="stylesheet" href="assets/css/main.css" />
 
+		<style type="text/css">
+			body {
+				font-family: sans-serif;
+				margin-left: 10px;
+			}
+			#exp {
+				max-width: 1000px;
+			}
+		</style>
+
+		<script type="text/javascript">
+			function copyEmail(evt) {
+			    evt.preventDefault();
+			    navigator.clipboard.writeText(email()).then(() => {
+			      document.getElementById("copied").style.visibility = "visible";
+			      setTimeout(() => { document.getElementById("copied").style.visibility = "hidden"; }, 2000);
+			    }, () => {
+			      /* clipboard write failed */
+			    });
+			}
+
+			function email() {
+				const e = "mohite[dot]ruturaj15[at]gmail[dot]com";
+				return e.replace(/\[dot\]/g, '.').replace(/\[at\]/g, '@');
+			}
+		</script>
 	</head>
-	<body class="is-preload">
-
-		<!-- Header -->
-			<section id="header">
-				<header>
-					<h1 id="logo">Ruturaj Mohite</h1>
-					<p><b class="type" height="100px"></b></p>
-				</header>
-
-				<nav id="nav">
-					<ul>
-						<li><a href="#one" class="active">About</a></li>
-						<li><a href="#five">Experience</a></li>
-						<li><a href="#three">Projects</a></li>
-						<li><a href="#four">Contact</a></li>
-						<br>
-						<li><a href="resume.pdf">Resume</a></li>
-						<li><a href="blog" target="_blank">Blog</a></li>
-					</ul>
-				</nav>
-			</section>
-
-		<!-- Wrapper -->
-			<div id="wrapper">
-
-				<!-- Main -->
-					<div id="main">
-
-						<!-- One -->
-							<section id="one">
-								<div class="container">
-									<header class="major">
-										<ul class="icons">
-						<li><a href="https://www.github.com/gr455" class="icon brands fa-github"><span class="label">Github</span></a></li>						
-						<li id="email"><a href="mailto:mohite.ruturaj15@gmail.com" class="icon solid fa-envelope"><span class="label" ><h1>mohite.ruturaj15@gmail.com</h1></span></a></li>
-						<li><a href="https://www.linkedin.com/in/ruturaj-mohite/" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
-
-					</ul>
-
-									</header>
-									<p class="info">
-										I am a masters student at The International Institute of Information Technology Bangalore. I love to poke around in the Linux Kernel or mess with networks. Might have written a bootloader from scratch.
-									</p>
-									
-								</div>
-
-							</section>
-							<section id="five">
-								<div class="container">
-									<h3>Experience</h3>	
-									<p><a><b>Google</b></a> - <i>Software Engineering Intern</i> - Worked with Google Store Content Management and Publishing team. Designed a service for monitoring cache replication and release verification.</p>
-									<p><a href="https://github.com/CircuitVerse/CircuitVerse"><b>CircuitVerse</b></a> - Maintainer, Security guy, Google Summer of Code mentor, organization admin.</p>
-									<p><a><b>Cloud Native Computing Foundation - Layer5</b></a> - <i>Software Engineering Intern</i> - Worked on Meshery, a Cloud Native Manager. Multi-Context support, Meshery CLI, Meshery Cloud Catalog.</p>				
-								</div>
-							</section>
-						<!-- Three -->
-							<section id="three">
-								<div class="container">
-									<h3>Projects</h3>
-									<div class="features">
-										<article>
-											<div class="">
-												<h4><a href="https://github.com/gr455/vSOS">vSOS</a></h4>
-												<p>A simple as possible bootloader and 32 bit kernel for x86 systems</p>
-												<p>vSOS contains:</p>
-												<ul>
-													<li>Keyboard driver</li>
-													<li>VGA driver</li>
-													<li>Interactive shell</li>
-													<li>Custom standard library (C)</li>
-												</ul>
-											</div>
-										</article>
-										<article>
-											<div class="">
-												<h4><a href="https://github.com/gr455/egress_cgroup_socket_filter">Egress Cgroup Socket Filter</a></h4>
-												<p>BPF based per-process per-container egress filter. Attaches to containers and monitors processes for egress connections. Drops connections in the kernel's network stack if the connections violates allow-list.</p>
-											</div>
-										</article>
-									</div>
-								</div>
-							</section>
-
-						<!-- Four -->
-							<section id="four">
-								<div class="container">
-									<h3>Contact</h3>
-									<p>Email: <b><a href="mailto:mohite.ruturaj15@gmail.com">mohite.ruturaj15@gmail.com</a></b></p>
-									<br><br>
-								</div>
-							</section>
-
-					</div>
-
-				<!-- Footer -->
-					<section id="footer">
-						<div class="container">
-						</div>
-					</section>
-
+	<h1 style="text-align: center;">Ruturaj Mohite</h1>
+	<div style="width: 100%; height: 300px;">
+		<div style="width: 55%; float: left;">
+			<div>
+				Software Engineer interested in distributed systems and networks. On the right is a picture of me petting the statue of Hachiko.
+			</div>
+			<div style="margin-top: 30px">
+			Links:<br>
+				<ul>
+					<li style="margin-top: 2px;"><a href="https://www.linkedin.com/in/ruturaj-mohite/" target="_blank">Linkedin</a></li>
+					<li style="margin-top: 2px;"><a href="https://github.com/gr455" target="_blank">GitHub</a></li>
+					<li style="margin-top: 2px;"><a href="#" onclick="copyEmail(event)">email: mohite<i>[dot]</i>ruturaj15<i>[at]</i>gmail<i>[dot]</i>com</a> (clicking copies) <span id="copied" style="visibility: hidden; color: green;">copied!</span></li>
+					<li style="margin-top: 2px;"><a href="resume.pdf" target="_blank">Resume</a></li>
+				</ul>
 			</div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+			<div id="exp" style="">
+			<h2>Experience</h2>
+			<ul>
+				<li><b>Software Engineer at Google</b> (Jul 2024 to Present in Bangalore)
+					<div style="margin-top: 1px; margin-left: 20px;">Google Store Content Management and Publishing team</div>
+				</li>
+				<li style="margin-top: 10px;"><b>Software Engineer Intern at Mercari</b> (Feb 2024 to Mar 2024 in Tokyo)
+					<div style="margin-top: 1px; margin-left: 20px;">
+						Worked with the Japan Region Trust and Safety team to implement KYC checks for listers.
+					</div>
+				</li>
+				<li style="margin-top: 10px;"><b>Software Engineer Intern at Google</b> (May 2023 to Aug 2023 in Bangalore)
+					<div style="margin-top: 1px; margin-left: 20px;">
+						Worked with the Google Store Content Management and Publishing team to verify releases and monitor cache replication delay during new product introductions.
+					</div>
+				</li>
+			</ul>
+			... and some more
+		</div>
 
+		<div id="oss">
+			<h2>Open Source</h2>
+			I maintain, and have written a part of <b>CircuitVerse</b> - An open source digital logic simulator. Logisim, but better, on web. You can even give out assignments on it. CV is used by hundreds of thousands of users and many universities.
+			<br/><br/>
+			Make cool circuits at <a href="https://circuitverse.org/simulator" target="_blank">circuitverse.org/simulator</a>
+		</div>
 
-	</body>
+		<div id="proj">
+			<h2>Projects</h2>
+			I keep making stuff, usually to learn about something new. So a lot of this is not pretty, but it works (i hope).
+			<ul>
+				<li>An eBPF program that lets you define per-container per-process policies for outgoing traffic (<a href="https://github.com/gr455/contain" target="_blank">Link</a>)</li>
+				<li>A bootloader for 32 bit x86 machines (<a href="https://github.com/gr455/vSOS" target="_blank">Link</a>)</li>
+				<li>A simulation of the RAFT consensus algorithm over docker containers (<a href="https://github.com/gr455/RAFT-on-docker" target="_blank">Link</a>)</li>
+			</ul>
+		</div>
+
+		<div id="edu">
+			<h2>Education</h2>
+			I graduated with my <b>Masters in Computer Science</b> from <b>IIIT Bangalore</b> in <b>2024</b>.
+		</div>
+
+	</div>
+		<div style="width: 40%; float: right;">
+			<img src="me.jpg" style="height: 100%; width: 100%; max-height: 400px; max-width: 400px;" />
+		</div>
+
+	</div>
 </html>
+
+
