@@ -54,6 +54,9 @@
         #beloww {
         	display: none;
         }
+        #cvonmobile {
+            display: none;
+        }
         @media (max-width: 849px) {
             .container {
                 display: flex;
@@ -81,6 +84,9 @@
             }
             .content {
             	order: 2;
+            }
+            #cvonmobile {
+                display: inline-block;
             }
         }
     </style>
@@ -138,7 +144,7 @@
 	            <div id="oss">
 	                <h2>Open Source</h2>
 	                I maintain, and have written a part of <b>CircuitVerse</b> - An open source digital logic simulator. Logisim, but better, on web. You can even give out assignments on it. CV is used by hundreds of thousands of users and many universities.<br/><br/>
-	                Make cool circuits at <a href="https://circuitverse.org/simulator" target="_blank">circuitverse.org/simulator</a>
+	                Make cool circuits at <a href="https://circuitverse.org/simulator" target="_blank">circuitverse.org/simulator</a>. <span id="cvonmobile">(On a phone? Works there too!)</span>
 	            </div>
 
 	            <div id="proj">
