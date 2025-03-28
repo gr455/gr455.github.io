@@ -1,102 +1,167 @@
 <!DOCTYPE HTML>
 <html>
-<!-- For copying email -->	
-	<head>
-		<title>Ruturaj Mohite</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+<head>
+    <title>Ruturaj Mohite</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 
-		<style type="text/css">
-			body {
-				font-family: sans-serif;
-				margin-left: 10px;
-			}
-			#exp {
-				max-width: 1000px;
-			}
-		</style>
+    <style type="text/css">
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+        h1 {
+            text-align: center;
+        }
+        #exp {
+            max-width: 1000px;
+        }
+        .container {
+        	display: flex;
+            width: 100%;
+            max-width: 1500px;
+            margin: 0 auto;
+            gap: 50px;
+        }
+        .left-section {
+        	max-width: 60%;
+        }
+        .headline {
+        }
+        .right-section {
+        	max-width: 40%;
+        }
+        .right-section img {
+        	width: 100%;
+        }
+        .links ul li {
+            margin-top: 2px;
+        }
+        .experience ul li {
+            margin-top: 10px;
+        }
+        .experience div {
+            margin-top: 1px;
+            margin-left: 20px;
+        }
+        #copied {
+            visibility: hidden;
+            color: green;
+        }
+        #otr {
+        	display: inline-block;
+        }
+        #beloww {
+        	display: none;
+        }
+        @media (max-width: 849px) {
+            .container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            #otr {
+            	display: none;
+            }
+            #beloww {
+            	display: inline-block;
+            }
+            .left-section {
+            	display: contents;
+            }
+            .right-section {
+            	display: contents;
+            }
+            .headline {
+                order: 0;
+            }
+            .imgme {
+                order: 1;
+                max-width: 500px;
+            }
+            .content {
+            	order: 2;
+            }
+        }
+    </style>
+    
+    <script type="text/javascript">
+        function copyEmail(evt) {
+            evt.preventDefault();
+            navigator.clipboard.writeText(email()).then(() => {
+                document.getElementById("copied").style.visibility = "visible";
+                setTimeout(() => { document.getElementById("copied").style.visibility = "hidden"; }, 2000);
+            });
+        }
+        function email() {
+            const e = "mohite[dot]ruturaj15[at]gmail[dot]com";
+            return e.replace(/\[dot\]/g, '.').replace(/\[at\]/g, '@');
+        }
+    </script>
+</head>
+<body>
+    <h1>Ruturaj Mohite</h1>	
+    <div class="container">
+    	<div class="left-section">
+	        <div class="headline">
+		        <div>
+		            Software Engineer interested in distributed systems and networks. <span id="otr">On the right</span><span id="beloww">Below</span> is a picture of me petting the statue of Hachiko.
+		        </div>
+		    </div>
+	        <div class="content">
+	            <div class="links" style="margin-top: 30px">
+	                Links:<br>
+	                <ul>
+	                    <li><a href="https://www.linkedin.com/in/ruturaj-mohite/" target="_blank">Linkedin</a></li>
+	                    <li><a href="https://github.com/gr455" target="_blank">GitHub</a></li>
+	                    <li><a href="#" onclick="copyEmail(event)">email: mohite<i>[dot]</i>ruturaj15<i>[at]</i>gmail<i>[dot]</i>com</a> (clicking copies) <span id="copied">copied!</span></li>
+	                    <li><a href="resume.pdf" target="_blank">Resume</a></li>
+	                </ul>
+	            </div>
 
-		<script type="text/javascript">
-			function copyEmail(evt) {
-			    evt.preventDefault();
-			    navigator.clipboard.writeText(email()).then(() => {
-			      document.getElementById("copied").style.visibility = "visible";
-			      setTimeout(() => { document.getElementById("copied").style.visibility = "hidden"; }, 2000);
-			    }, () => {
-			      /* clipboard write failed */
-			    });
-			}
+	            <div id="exp" class="experience">
+	                <h2>Experience</h2>
+	                <ul>
+	                    <li><b>Software Engineer at Google</b> (Jul 2024 to Present in Bangalore)
+	                        <div>Google Store Content Management and Publishing team</div>
+	                    </li>
+	                    <li><b>Software Engineer Intern at Mercari</b> (Feb 2024 to Mar 2024 in Tokyo)
+	                        <div>Worked with the Japan Region Trust and Safety team to implement KYC checks for listers.</div>
+	                    </li>
+	                    <li><b>Software Engineer Intern at Google</b> (May 2023 to Aug 2023 in Bangalore)
+	                        <div>Worked with the Google Store Content Management and Publishing team to verify releases and monitor cache replication delay during new product introductions.</div>
+	                    </li>
+	                </ul>
+	                ... and some more
+	            </div>
 
-			function email() {
-				const e = "mohite[dot]ruturaj15[at]gmail[dot]com";
-				return e.replace(/\[dot\]/g, '.').replace(/\[at\]/g, '@');
-			}
-		</script>
-	</head>
-	<h1 style="text-align: center;">Ruturaj Mohite</h1>
-	<div style="width: 100%; height: 300px;">
-		<div style="width: 55%; float: left;">
-			<div>
-				Software Engineer interested in distributed systems and networks. On the right is a picture of me petting the statue of Hachiko.
-			</div>
-			<div style="margin-top: 30px">
-			Links:<br>
-				<ul>
-					<li style="margin-top: 2px;"><a href="https://www.linkedin.com/in/ruturaj-mohite/" target="_blank">Linkedin</a></li>
-					<li style="margin-top: 2px;"><a href="https://github.com/gr455" target="_blank">GitHub</a></li>
-					<li style="margin-top: 2px;"><a href="#" onclick="copyEmail(event)">email: mohite<i>[dot]</i>ruturaj15<i>[at]</i>gmail<i>[dot]</i>com</a> (clicking copies) <span id="copied" style="visibility: hidden; color: green;">copied!</span></li>
-					<li style="margin-top: 2px;"><a href="resume.pdf" target="_blank">Resume</a></li>
-				</ul>
-			</div>
+	            <div id="oss">
+	                <h2>Open Source</h2>
+	                I maintain, and have written a part of <b>CircuitVerse</b> - An open source digital logic simulator. Logisim, but better, on web. You can even give out assignments on it. CV is used by hundreds of thousands of users and many universities.<br/><br/>
+	                Make cool circuits at <a href="https://circuitverse.org/simulator" target="_blank">circuitverse.org/simulator</a>
+	            </div>
 
-			<div id="exp" style="">
-			<h2>Experience</h2>
-			<ul>
-				<li><b>Software Engineer at Google</b> (Jul 2024 to Present in Bangalore)
-					<div style="margin-top: 1px; margin-left: 20px;">Google Store Content Management and Publishing team</div>
-				</li>
-				<li style="margin-top: 10px;"><b>Software Engineer Intern at Mercari</b> (Feb 2024 to Mar 2024 in Tokyo)
-					<div style="margin-top: 1px; margin-left: 20px;">
-						Worked with the Japan Region Trust and Safety team to implement KYC checks for listers.
-					</div>
-				</li>
-				<li style="margin-top: 10px;"><b>Software Engineer Intern at Google</b> (May 2023 to Aug 2023 in Bangalore)
-					<div style="margin-top: 1px; margin-left: 20px;">
-						Worked with the Google Store Content Management and Publishing team to verify releases and monitor cache replication delay during new product introductions.
-					</div>
-				</li>
-			</ul>
-			... and some more
-		</div>
+	            <div id="proj">
+	                <h2>Projects</h2>
+	                I keep making stuff, usually to learn about something new. So a lot of this is not pretty, but it works (I hope).
+	                <ul>
+	                    <li>A distributed key-value store like etcd (<a href="https://github.com/gr455/omnipresence" target="_blank">Link</a>)</li>
+	                    <li>An eBPF program that lets you define per-container per-process policies for outgoing traffic (<a href="https://github.com/gr455/contain" target="_blank">Link</a>)</li>
+	                    <li>A bootloader for 32-bit x86 machines (<a href="https://github.com/gr455/vSOS" target="_blank">Link</a>)</li>
+	                </ul>
+	            </div>
 
-		<div id="oss">
-			<h2>Open Source</h2>
-			I maintain, and have written a part of <b>CircuitVerse</b> - An open source digital logic simulator. Logisim, but better, on web. You can even give out assignments on it. CV is used by hundreds of thousands of users and many universities.
-			<br/><br/>
-			Make cool circuits at <a href="https://circuitverse.org/simulator" target="_blank">circuitverse.org/simulator</a>
-		</div>
-
-		<div id="proj">
-			<h2>Projects</h2>
-			I keep making stuff, usually to learn about something new. So a lot of this is not pretty, but it works (i hope).
-			<ul>
-				<li>A distributed key-value store like etcd (<a href="https://github.com/gr455/omnipresence" target="_blank">Link</a>)</li>
-				<li>An eBPF program that lets you define per-container per-process policies for outgoing traffic (<a href="https://github.com/gr455/contain" target="_blank">Link</a>)</li>
-				<li>A bootloader for 32 bit x86 machines (<a href="https://github.com/gr455/vSOS" target="_blank">Link</a>)</li>
-			</ul>
-		</div>
-
-		<div id="edu">
-			<h2>Education</h2>
-			I graduated with my <b>Masters in Computer Science</b> from <b>IIIT Bangalore</b> in <b>2024</b>.
-		</div>
-
-	</div>
-		<div style="width: 40%; float: right;">
-			<img src="me.jpg" style="height: 100%; width: 100%; max-height: 400px; max-width: 400px;" />
-		</div>
-
-	</div>
+	            <div id="edu">
+	                <h2>Education</h2>
+	                I graduated with my <b>Masters in Computer Science</b> from <b>IIIT Bangalore</b> in <b>2024</b>.
+	            </div>
+	        </div>
+    </div>
+        <div class="right-section">
+            <div class="imgme">
+            	<img src="me.jpg" alt="Ruturaj Mohite" />
+            </div>
+        </div>
+    </div>
+</body>
 </html>
-
-
